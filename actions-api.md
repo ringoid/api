@@ -1,12 +1,12 @@
 # Actions Service
 
-### STAGE API ENDPOINT IS ``https://mci38swwu5.execute-api.eu-west-1.amazonaws.com``
+### STAGE API ENDPOINT IS ``https://6u93nx78n3.execute-api.eu-west-1.amazonaws.com/Prod``
 ### PROD API ENDPOINT IS ````
 
 
 ### Action url
 
-* url ``https://{API ENDPOINT}/Prod/actions``
+* url ``https://{API ENDPOINT}/actions``
 
 POST request
 

@@ -1,12 +1,12 @@
 # Image Service
 
-### STAGE API ENDPOINT IS ``https://7y3xkhp09i.execute-api.eu-west-1.amazonaws.com``
+### STAGE API ENDPOINT IS ``https://rg81cz68g7.execute-api.eu-west-1.amazonaws.com/Prod``
 ### PROD API ENDPOINT IS ````
 
 
 ### Get pre-signed url
 
-* url ``https://{API ENDPOINT}/Prod/get_presigned``
+* url ``https://{API ENDPOINT}/get_presigned``
 
 POST request
 
@@ -44,7 +44,7 @@ Possible errorCodes:
 
 ### Get user's own photos
 
-* url ``https://{API ENDPOINT}/Prod/get_own_photos?accessToken={ACCESS TOKEN}&resolution=480x640``
+* url ``https://{API ENDPOINT}/get_own_photos?accessToken={ACCESS TOKEN}&resolution=480x640``
 
 GET request
 
@@ -80,7 +80,7 @@ Possible errorCodes:
 
 ### Delete user's photo
 
-* url ``https://{API ENDPOINT}/Prod/delete_photo``
+* url ``https://{API ENDPOINT}/delete_photo``
 
 POST request
 

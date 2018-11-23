@@ -1,12 +1,12 @@
 # Feeds Service
 
 
-### STAGE API ENDPOINT IS ``https://8drmzssr62.execute-api.eu-west-1.amazonaws.com``
+### STAGE API ENDPOINT IS ``https://nd73uigiid.execute-api.eu-west-1.amazonaws.com/Prod``
 ### PROD API ENDPOINT IS ````
 
 ### Get new faces
 
-* url ``https://{API ENDPOINT}/Prod/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&limit={LIMIT}``
+* url ``https://{API ENDPOINT}/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&limit={LIMIT}``
 
 GET request
 
