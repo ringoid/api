@@ -84,9 +84,9 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
-### Logout user
+### Delete user's account
 
-* url ``https://{API ENDPOINT}/logout``
+* url ``https://{API ENDPOINT}/delete``
 
 POST request
 
