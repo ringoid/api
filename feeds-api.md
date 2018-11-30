@@ -42,6 +42,47 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
+### Get LLM
+
+* url ``https://{API ENDPOINT}/get_lmm?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345``
+
+GET request
+
+Allowed Sizes:
+
+* 480x640
+* 720x960
+* 1080x1440
+* 1440x1920
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":"",
+        "repeatRequestAfterSec":0,
+        "likesYouNewProfiles":[
+            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
+            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        ]
+        "likesYouOldProfiles":[
+            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
+            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        ]
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+
 ## Analytics Events
 
 1. FEEDS_NEW_FACES_SEEN_PROFILES
@@ -52,4 +93,11 @@ Possible errorCodes:
 * timeToDelete - int
 * unixTime - int
 * eventType - string (FEEDS_NEW_FACES_SEEN_PROFILES)
+
+2. FEEDS_LLM_PROFILES
+
+* userId - string
+* targetUserIds - []string
+* unixTime - int
+* eventType - string (FEEDS_LLM_PROFILES)
 
