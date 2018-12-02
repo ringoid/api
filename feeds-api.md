@@ -69,8 +69,16 @@ Headers:
         "likesYouNewProfiles":[
             {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
             {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
-        ]
+        ],
         "likesYouOldProfiles":[
+            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
+            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        ],
+        "matchesNewProfiles":[
+            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
+            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        ],
+        "matchesOldProfiles":[
             {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
             {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
         ]
