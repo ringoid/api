@@ -182,9 +182,10 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (AUTH_USER_SETTINGS_UPDATED)
 
-4. AUTH_USER_LOGOUT
+4. AUTH_USER_CALL_DELETE_HIMSELF
 
 * userId - string
+* userReportStatus - string (REPORTED || REPORT_INITIATOR)
 * unixTime - int
-* eventType - string (AUTH_USER_LOGOUT)
+* eventType - string (AUTH_USER_CALL_DELETE_HIMSELF)
 
