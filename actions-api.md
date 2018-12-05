@@ -67,6 +67,8 @@ Possible errorCodes:
        "sourceFeed":"new_faces", // who_liked_me, matches, messages
        "actionType":"BLOCK",
        "targetUserId":"skdfkjhkjsdhf",
+       "targetPhotoId":"sldfnlskdj",
+       "blockReasonNum":19,
        "actionTime":12342342354 //unix time
 
 4. UNLIKE json with properties
@@ -112,7 +114,9 @@ Possible errorCodes:
 
 * userId - string
 * targetUserId - string
+* targetPhotoId - string
 * blockedAt - int
+* blockReasonNum - int
 * source - string
 * unixTime - int
 * eventType - string (ACTION_USER_BLOCK_OTHER)

@@ -142,6 +142,7 @@ Possible errorCodes:
 
 * userId - string
 * photoId - string
+* userTakePartInReport - bool
 * unixTime - int
 * eventType - string (IMAGE_USER_DELETE_PHOTO)
 
