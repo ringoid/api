@@ -30,8 +30,25 @@ Headers:
         "errorCode":"",
         "errorMessage":"",
         "profiles":[
-            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
-            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+            {
+                "userId":"9091127b2a88b002fad4ef55beb0264222c1ebb7",
+                "defaultSortingOrderPosition":0,
+                "photos": [
+                        {
+                          "photoId": "480x640_sfsdfsdfsdf",
+                          "photoUri": "https://bla-bla.jpg"
+                        },
+                        {
+                          "photoId": "480x640_gfgsdfsdf",
+                          "photoUri": "https://bla-bla.jpg"
+                        },
+                        {
+                          "photoId": "480x640_gfdsfsdfsdf",
+                          "photoUri": "https://bla-bla.jpg"
+                        }
+                ]
+            },
+            ...
         ]
     }
     
@@ -66,21 +83,42 @@ Headers:
         "errorCode":"",
         "errorMessage":"",
         "repeatRequestAfterSec":0,
-        "likesYouNewProfiles":[
-            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
-            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        
+        "likesYou": [
+            {
+              "userId": "fdsdfsdfsdfsdfsdf",
+              "defaultSortingOrderPosition": 0,
+              "photos": [
+                {
+                  "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
+                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/52e08292d10cacf2f40abe5542513187270bb182_480x640.jpg"
+                },
+                ....
+              ]
+            },
+            {
+              "userId": "fsdfsdfsdfsdfsdf",
+              "defaultSortingOrderPosition": 1,
+              "photos": [
+                {
+                  "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
+                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                },
+                ....
+              ]
+            }
         ],
-        "likesYouOldProfiles":[
-            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
-            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
-        ],
-        "matchesNewProfiles":[
-            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
-            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
-        ],
-        "matchesOldProfiles":[
-            {"photoId":"12dd","photoUri":"https://bla-bla.com/sss.jpg"},
-            {"photoId":"12ff","photoUri":"https://bla-bla.com/ddd.jpg"}
+        
+        "matches": [
+            {
+               "userId": "fsdfsdfsdfsdfsdf",
+               "defaultSortingOrderPosition": 1,
+               "photos": [
+                 {
+                    "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                 },
+                 ...
         ]
     }
     
