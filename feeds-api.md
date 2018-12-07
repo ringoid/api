@@ -88,6 +88,7 @@ Headers:
             {
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
+              "unseen": true,
               "photos": [
                 {
                   "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
@@ -99,6 +100,7 @@ Headers:
             {
               "userId": "fsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 1,
+              "unseen": false,
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -113,6 +115,7 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 1,
+               "unseen": true,
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
