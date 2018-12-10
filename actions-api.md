@@ -86,6 +86,7 @@ Possible errorCodes:
 1. ACTION_USER_LIKE_PHOTO
 
 * userId - string
+* sourceIp - string
 * photoId - string
 * originPhotoId - string
 * targetUserId - string
@@ -99,6 +100,7 @@ Possible errorCodes:
 2. ACTION_USER_VIEW_PHOTO
 
 * userId - string
+* sourceIp - string
 * photoId - string
 * originPhotoId - string
 * targetUserId - string
@@ -113,6 +115,7 @@ Possible errorCodes:
 3. ACTION_USER_BLOCK_OTHER
 
 * userId - string
+* sourceIp - string
 * targetUserId - string
 * targetPhotoId - string
 * blockedAt - int
@@ -125,6 +128,7 @@ Possible errorCodes:
 4. ACTION_USER_UNLIKE_PHOTO
 
 * userId - string
+* sourceIp - string
 * photoId - string
 * originPhotoId - string
 * targetUserId - string

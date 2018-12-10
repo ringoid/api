@@ -123,8 +123,6 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (IMAGE_USER_ASK_UPLOAD_PHOTO_LINK)
 
-`{"userId":"aslkdl-asfmfa-asd","bucket":"origin-photo","photoKey":"aslkdl-asfmfa-asd","unixTime":1534338646,"eventType":"IMAGE_USER_ASK_UPLOAD_PHOTO_LINK"}`
-
 2. IMAGE_USER_UPLOAD_PHOTO
 
 * userId - string
@@ -136,17 +134,14 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (IMAGE_USER_UPLOAD_PHOTO)
 
-`{"userId":"aslkdl-asfmfa-asd","bucket":"origin-photo","photoKey":"aslkdl-asfmfa-asd","photoId":"aslkdl-asfmfa-asd","photoType":"origin","size":1200,"unixTime":1534338646,"eventType":"IMAGE_USER_UPLOAD_PHOTO"}`
-
 3. IMAGE_USER_DELETE_PHOTO
 
 * userId - string
+* sourceIp - string
 * photoId - string
 * userTakePartInReport - bool
 * unixTime - int
 * eventType - string (IMAGE_USER_DELETE_PHOTO)
-
-`{"userId":"aslkdl-asfmfa-asd","photoId":"aslkdl-asfmfa-asd","unixTime":1534338646,"eventType":"IMAGE_USER_DELETE_PHOTO"}`
 
 4. IMAGE_REMOVE_TO_BIG_S3_OBJECT
 
@@ -157,5 +152,10 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (IMAGE_REMOVE_TO_BIG_S3_OBJECT)
 
-`{"userId":"aslkdl-asfmfa-asd","bucket":"bucket-name","key":"/foto.jpg","size":"1024","unixTime":1534338646,"eventType":"IMAGE_REMOVE_TO_BIG_S3_OBJECT"}`
+5. IMAGE_GET_OWN_PHOTOS
 
+* userId - string
+* sourceIp - string
+* ownPhotoNum - int
+* unixTime - int
+* eventType - string (IMAGE_GET_OWN_PHOTOS)

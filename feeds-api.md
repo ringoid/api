@@ -137,6 +137,7 @@ Possible errorCodes:
 1. FEEDS_NEW_FACES_SEEN_PROFILES
 
 * userId - string
+* sourceIp - string
 * targetUserIds - []string
 * newFaceProfilesNum - int
 * timeToDelete - int
@@ -146,6 +147,7 @@ Possible errorCodes:
 2. FEEDS_LLM_PROFILES
 
 * userId - string
+* sourceIp - string
 * likeYouProfilesNum - int
 * matchProfilesNum - int
 * messageProfilesNum - int

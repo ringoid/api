@@ -167,6 +167,7 @@ Possible errorCodes:
 2. AUTH_USER_PROFILE_CREATED
 
 * userId - string
+* sourceIp - string
 * sex - string
 * yearOfBirth - int
 * unixTime - int
@@ -175,6 +176,7 @@ Possible errorCodes:
 3. AUTH_USER_SETTINGS_UPDATED
 
 * userId - string
+* sourceIp - string
 * safeDistanceInMeter - int
 * pushMessages - bool
 * pushMatches - bool
@@ -182,9 +184,18 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (AUTH_USER_SETTINGS_UPDATED)
 
-4. AUTH_USER_CALL_DELETE_HIMSELF
+4. AUTH_GET_USER_SETTINGS
 
 * userId - string
+* sourceIp - string
+* unixTime - int
+* eventType - string (AUTH_GET_USER_SETTINGS)
+
+
+5. AUTH_USER_CALL_DELETE_HIMSELF
+
+* userId - string
+* sourceIp - string
 * userReportStatus - string (REPORTED || REPORT_INITIATOR)
 * unixTime - int
 * eventType - string (AUTH_USER_CALL_DELETE_HIMSELF)
