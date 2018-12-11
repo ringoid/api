@@ -52,24 +52,24 @@ Possible errorCodes:
 2. VIEW json with properties:
 
 
-       "sourceFeed":"new_faces", // who_liked_me, matches, messages
-       "actionType":"VIEW",
-       "targetPhotoId":"640x480_ksjdhfkjhhsh",
-       "targetUserId":"skdfkjhkjsdhf",
-       "viewCount":5,
-       "viewTimeSec":45,
-       "actionTime":12342342354 //unix time
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "actionType":"VIEW",
+        "targetPhotoId":"640x480_ksjdhfkjhhsh",
+        "targetUserId":"skdfkjhkjsdhf",
+        "viewCount":5,
+        "viewTimeSec":45,
+        "actionTime":12342342354 //unix time
 
 
 3. BLOCK json with properties
 
 
-       "sourceFeed":"new_faces", // who_liked_me, matches, messages
-       "actionType":"BLOCK",
-       "targetUserId":"skdfkjhkjsdhf",
-       "targetPhotoId":"sldfnlskdj",
-       "blockReasonNum":19,
-       "actionTime":12342342354 //unix time
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "actionType":"BLOCK",
+        "targetUserId":"skdfkjhkjsdhf",
+        "targetPhotoId":"sldfnlskdj",
+        "blockReasonNum":19,
+        "actionTime":12342342354 //unix time
 
 4. UNLIKE json with properties
 
@@ -80,6 +80,15 @@ Possible errorCodes:
         "targetUserId":"skdfkjhkjsdhf",
         "actionTime":12342342354 //unix time
 
+5. MESSAGE json with properties
+
+
+        "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+        "actionType":"MESSAGE",
+        "targetPhotoId":"640x480_ksjdhfkjhhsh",
+        "targetUserId":"skdfkjhkjsdhf",
+        "text":"Hi",
+        "actionTime":12342342354 //unix time
 
 ## Analytics Events
 
@@ -138,3 +147,15 @@ Possible errorCodes:
 * eventType - string (ACTION_USER_UNLIKE_PHOTO)
 * internalServiceSource - string
 
+5. ACTION_USER_MESSAGE
+
+* userId - string
+* sourceIp - string
+* targetUserId - string
+* photoId - string
+* originPhotoId - string
+* text - string (always empty)
+* source - string
+* messageAt - int
+* unixTime - int
+* eventType - string (ACTION_USER_MESSAGE)
