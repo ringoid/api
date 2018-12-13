@@ -89,6 +89,7 @@ Headers:
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
               "unseen": true,
+              "messages" : [], //ALWAYS EMPTY
               "photos": [
                 {
                   "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
@@ -114,8 +115,25 @@ Headers:
         "matches": [
             {
                "userId": "fsdfsdfsdfsdfsdf",
-               "defaultSortingOrderPosition": 1,
+               "defaultSortingOrderPosition": 0,
                "unseen": true,
+               "messages" : [], //ALWAYS EMPTY
+               "photos": [
+                 {
+                    "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                 },
+                 ...
+        ],
+        
+        "messages": [
+            {
+               "userId": "fsdfsdfsdfsdfsdf",
+               "defaultSortingOrderPosition": 0, //ALWAYS 0
+               "unseen": false, //ALWAYS false
+               "messages" : [
+                    {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
+               ],
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -123,6 +141,7 @@ Headers:
                  },
                  ...
         ]
+        
     }
     
 Possible errorCodes:
