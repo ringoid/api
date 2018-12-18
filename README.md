@@ -10,4 +10,4 @@
 [Errors service API](https://github.com/ringoid/api/blob/master/errors-api.md) 
 
 
-[How to handle errors that a service returns](https://github.com/ringoid/api/blob/master/error-handling.md)
+[How to handle an error that a service may return](https://github.com/ringoid/api/blob/master/error-handling.md)
