@@ -1,7 +1,6 @@
 # Errors Service
 
-### STAGE API ENDPOINT IS ``https://xvlq70j9zb.execute-api.eu-west-1.amazonaws.com``
-### PROD API ENDPOINT IS ````
+### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/errors``
 
 
 ### Timeout url

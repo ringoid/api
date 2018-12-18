@@ -1,7 +1,7 @@
 # Image Service
 
-### STAGE API ENDPOINT IS ``https://rg81cz68g7.execute-api.eu-west-1.amazonaws.com/Prod``
-### PROD API ENDPOINT IS ````
+### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/image``
+### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/image``
 
 
 ### Get pre-signed url

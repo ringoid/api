@@ -1,7 +1,7 @@
 # auth service
 
-### STAGE API ENDPOINT IS ``https://k8dy93q5pa.execute-api.eu-west-1.amazonaws.com/Prod``
-### PROD API ENDPOINT IS ````
+### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/auth``
+### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/auth``
 
 
 ### Create user profile

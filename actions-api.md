@@ -1,7 +1,7 @@
 # Actions Service
 
-### STAGE API ENDPOINT IS ``https://6u93nx78n3.execute-api.eu-west-1.amazonaws.com/Prod``
-### PROD API ENDPOINT IS ````
+### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/actions``
+### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/actions``
 
 
 ### Action url

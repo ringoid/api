@@ -1,8 +1,8 @@
 # Feeds Service
 
 
-### STAGE API ENDPOINT IS ``https://nd73uigiid.execute-api.eu-west-1.amazonaws.com/Prod``
-### PROD API ENDPOINT IS ````
+### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/feeds``
+### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/feeds``
 
 ### Get new faces
 
