@@ -7,4 +7,7 @@
 
 [Feeds service API](https://github.com/ringoid/api/blob/master/feeds-api.md)
 
-[Errors service API](https://github.com/ringoid/api/blob/master/errors-api.md) & [How to handle errors that a service returns](https://github.com/ringoid/api/blob/master/error-handling.md)
+[Errors service API](https://github.com/ringoid/api/blob/master/errors-api.md) 
+
+
+[How to handle errors that a service returns](https://github.com/ringoid/api/blob/master/error-handling.md)
