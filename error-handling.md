@@ -1,5 +1,5 @@
 
-### How to handle errors that a service returns
+### How to handle an error that a service may return
 
 * **InternalServerError** - something went wrong inside the service (this is not OK and not planned). If you want to execute the request again, please pause between requests (i.e. introduce a delay to avoid overloading services and incurring extra charges if other apps are receiving that error too). If you still get this error after 3 attemps, display "Oops! Something went wrong" message box that also includes a text downloaded from http://ringoid.com/status.html
 
