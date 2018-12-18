@@ -7,4 +7,4 @@
 
 * **TooOldAppVersionClientError** - that means that your app's buildNum is too old, your app is outdated and services won't allow you to access API anymore. You need to display a special screen asking an user to do a forceful update of the app from the Apple iTunes app store or Google Play store. Don't try to access API again as you will keep receiving this error.
 
-* **?ClientError** - you will get **WrongSexClientError**, **WrongRequestParamsClientError**, etc. when you passed wrong parameters. There is no need to repeat such requests unless you fix parameters.
+* **WrongRequestParamsClientError**, **WrongYearOfBirthClientError**, **WrongSexClientError**, etc. - you passed invalid (wrong, not allowed) parameters from the client to a service. There is no need to repeat such requests unless you fix parameters.
