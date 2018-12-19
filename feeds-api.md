@@ -88,7 +88,7 @@ Headers:
             {
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
-              "unseen": true,
+              "notSeen": true,
               "messages" : [], //ALWAYS EMPTY
               "photos": [
                 {
@@ -101,7 +101,7 @@ Headers:
             {
               "userId": "fsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 1,
-              "unseen": false,
+              "notSeen": false,
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -116,7 +116,7 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
-               "unseen": true,
+               "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
                "photos": [
                  {
@@ -130,7 +130,7 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0, //ALWAYS 0
-               "unseen": false, //ALWAYS false
+               "notSeen": false, //ALWAYS false
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
                ],
