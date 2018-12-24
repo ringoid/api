@@ -21,8 +21,8 @@ Body:
         "yearOfBirth":1982,
         "sex":"male" // possible values are **male** or **female**,
         "dtTC":1535120929, //unix time when Terms and Conditions were accepted
-        "dtLA":1535120929, //unix time when Privacy Notes were accepted
-        "dtPN":1535120929, //unix time when Legal age was confirmed
+        "dtLA":1535120929, //unix time when Legal age was confirmed
+        "dtPN":1535120929, //unix time when Privacy Notes were accepted
         "locale":"en",
         "deviceModel":"device model info",
         "osVersion":"version of os"
