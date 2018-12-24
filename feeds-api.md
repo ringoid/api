@@ -59,7 +59,7 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
-### Get LLM
+### Get LMM
 
 * url ``https://{API ENDPOINT}/get_lmm?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345``
 
