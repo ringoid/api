@@ -129,8 +129,8 @@ Headers:
         "messages": [
             {
                "userId": "fsdfsdfsdfsdfsdf",
-               "defaultSortingOrderPosition": 0, //ALWAYS 0
-               "notSeen": false, //ALWAYS false
+               "defaultSortingOrderPosition": 0,
+               "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
                ],
