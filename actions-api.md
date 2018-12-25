@@ -90,6 +90,17 @@ Possible errorCodes:
         "text":"Hi",
         "actionTime":12342342354 //unix time
 
+6. OPEN_CHAT json with properties
+
+         
+         "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+         "actionType":"OPEN_CHAT",
+         "targetPhotoId":"640x480_ksjdhfkjhhsh",
+         "targetUserId":"skdfkjhkjsdhf",
+         "openChatCount":1,
+         "openChatTimeSec":23,
+         "actionTime":12342342354 //unix time
+        
 ## Analytics Events
 
 1. ACTION_USER_LIKE_PHOTO
@@ -159,3 +170,17 @@ Possible errorCodes:
 * messageAt - int
 * unixTime - int
 * eventType - string (ACTION_USER_MESSAGE)
+
+6. ACTION_USER_OPEN_CHAT
+
+* userId - string
+* sourceIp - string
+* targetUserId - string
+* photoId - string
+* originPhotoId - string
+* source - string
+* openChatCount - int
+* openChatAt - int
+* openChatTimeSec - int
+* unixTime - int
+* eventType - string (ACTION_USER_OPEN_CHAT)
