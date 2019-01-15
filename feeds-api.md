@@ -17,7 +17,12 @@ Allowed Sizes:
 * 1080x1440
 * 1440x1920
 
-LIMIT max value is 100
+* 750x1000
+* 828x1344
+* 1125x1827
+* 1242x2016
+
+LIMIT max value is 100, default value is 5
 
 Headers:
 
@@ -71,6 +76,12 @@ Allowed Sizes:
 * 720x960
 * 1080x1440
 * 1440x1920
+
+* 750x1000
+* 828x1344
+* 1125x1827
+* 1242x2016
+
 
 Headers:
 

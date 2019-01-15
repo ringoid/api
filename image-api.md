@@ -55,6 +55,12 @@ Allowed Sizes:
 * 1080x1440
 * 1440x1920
 
+* 750x1000
+* 828x1344
+* 1125x1827
+* 1242x2016
+
+
 Headers:
 
 * x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS

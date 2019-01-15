@@ -62,13 +62,13 @@ Body:
 
     {
         "accessToken":"adasdasd-fadfs-sdffd",
-        "safeDistanceInMeter":0,
-        "pushMessages":true,
-        "pushMatches":true,
-        "pushLikes":"EVERY" //possible values NONE/EVERY/10_NEW/100_NEW 
+        "safeDistanceInMeter":0, //default value is 0
+        "pushMessages":true,     //default value is false
+        "pushMatches":true,      //default value is false
+        "pushLikes":"EVERY"      //possible values NONE/EVERY/10_NEW/100_NEW 
     }
     
-    all parameters are required
+    accessToken and pushLikes are required params
     
  Response Body:
  
@@ -101,6 +101,8 @@ Body
         "accessToken":"adasdasd-fadfs-sdffd"
     }
 
+    
+    accessToken is required param
     
  Response Body:
  
