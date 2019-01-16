@@ -6,7 +6,7 @@
 
 ### Get new faces
 
-* url ``https://{API ENDPOINT}/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&limit={LIMIT}``
+* url ``https://{API ENDPOINT}/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345&limit={LIMIT}``
 
 GET request
 
@@ -34,6 +34,7 @@ Headers:
     {
         "errorCode":"",
         "errorMessage":"",
+        "repeatRequestAfterSec":0,
         "profiles":[
             {
                 "userId":"9091127b2a88b002fad4ef55beb0264222c1ebb7",
