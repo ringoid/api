@@ -171,6 +171,7 @@ Possible errorCodes:
 * targetUserIds - []string
 * newFaceProfilesNum - int
 * timeToDelete - int
+* repeatRequestAfterSec - int
 * unixTime - int
 * eventType - string (FEEDS_NEW_FACES_SEEN_PROFILES)
 
@@ -181,6 +182,7 @@ Possible errorCodes:
 * likeYouProfilesNum - int
 * matchProfilesNum - int
 * messageProfilesNum - int
+* repeatRequestAfterSec - int
 * unixTime - int
 * eventType - string (FEEDS_LLM_PROFILES)
 
