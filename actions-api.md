@@ -28,7 +28,8 @@ Body:
  
     {
         "errorCode":"",
-        "errorMessage":""
+        "errorMessage":"",
+        "lastActionTime":12345
     }
     
 Possible errorCodes:
