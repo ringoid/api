@@ -171,7 +171,6 @@ Possible errorCodes:
 * sourceIp - string
 * targetUserIds - []string
 * newFaceProfilesNum - int
-* timeToDelete - int
 * repeatRequestAfterSec - int
 * unixTime - int
 * eventType - string (FEEDS_NEW_FACES_SEEN_PROFILES)

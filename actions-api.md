@@ -48,7 +48,7 @@ Possible errorCodes:
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
         "likeCount":12,
-        "actionTime":12342342354 //unix time
+        "actionTime":12342342354 //unix time in milliseconds
 
 2. VIEW json with properties:
 
@@ -58,8 +58,8 @@ Possible errorCodes:
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
         "viewCount":5,
-        "viewTimeSec":45,
-        "actionTime":12342342354 //unix time
+        "viewTimeMillis":45,
+        "actionTime":12342342354 //unix time in milliseconds
 
 
 3. BLOCK json with properties
@@ -70,7 +70,7 @@ Possible errorCodes:
         "targetUserId":"skdfkjhkjsdhf",
         "targetPhotoId":"sldfnlskdj",
         "blockReasonNum":19,
-        "actionTime":12342342354 //unix time
+        "actionTime":12342342354 //unix time in milliseconds
 
 4. UNLIKE json with properties
 
@@ -79,7 +79,7 @@ Possible errorCodes:
         "actionType":"UNLIKE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
-        "actionTime":12342342354 //unix time
+        "actionTime":12342342354 //unix time in milliseconds
 
 5. MESSAGE json with properties
 
@@ -89,7 +89,7 @@ Possible errorCodes:
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
         "text":"Hi",
-        "actionTime":12342342354 //unix time
+        "actionTime":12342342354 //unix time in milliseconds
 
 6. OPEN_CHAT json with properties
 
@@ -99,8 +99,8 @@ Possible errorCodes:
          "targetPhotoId":"640x480_ksjdhfkjhhsh",
          "targetUserId":"skdfkjhkjsdhf",
          "openChatCount":1,
-         "openChatTimeSec":23,
-         "actionTime":12342342354 //unix time
+         "openChatTimeMillis":23,
+         "actionTime":12342342354 //unix time in milliseconds
         
 ## Analytics Events
 
