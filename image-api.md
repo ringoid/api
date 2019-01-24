@@ -77,14 +77,14 @@ Headers:
                 "originPhotoId":"sldkjflkjlkjlkjf",
                 "photoUri":"https://bla-bla.com/sss.jpg",
                 "likes":22,
-                "warning":true
+                "blocked":true
             },
             {
                 "photoId":"13dd",
                 "originPhotoId":"mnbmvnbcxlsdfhwo",
                 "photoUri":"https://bla-bla.com/sss2.jpg",
                 "likes":0,
-                "warning":false
+                "blocked":false
             }
         ]
     }
