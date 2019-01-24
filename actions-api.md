@@ -41,9 +41,11 @@ Possible errorCodes:
 
 ## Possible ACTION_OBJECTS
 
+Possible source feeds : new_faces, who_liked_me, matches, messages, chat
+
 1. LIKE json with properties:
         
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
         "actionType":"LIKE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -53,7 +55,7 @@ Possible errorCodes:
 2. VIEW json with properties:
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
         "actionType":"VIEW",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -65,7 +67,7 @@ Possible errorCodes:
 3. BLOCK json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
         "actionType":"BLOCK",
         "targetUserId":"skdfkjhkjsdhf",
         "targetPhotoId":"sldfnlskdj",
@@ -75,7 +77,7 @@ Possible errorCodes:
 4. UNLIKE json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
         "actionType":"UNLIKE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -84,7 +86,7 @@ Possible errorCodes:
 5. MESSAGE json with properties
 
 
-        "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
         "actionType":"MESSAGE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -94,7 +96,7 @@ Possible errorCodes:
 6. OPEN_CHAT json with properties
 
          
-         "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+         "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
          "actionType":"OPEN_CHAT",
          "targetPhotoId":"640x480_ksjdhfkjhhsh",
          "targetUserId":"skdfkjhkjsdhf",
