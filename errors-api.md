@@ -5,7 +5,7 @@
 
 ### Timeout url
 
-* url ``https://{API ENDPOINT}/Prod/timeout``
+* url ``https://{API ENDPOINT}/timeout``
 
 POST request
 
@@ -15,7 +15,7 @@ Headers:
 
 ### InvalidToken url
 
-* url ``https://{API ENDPOINT}/Prod/invalidtoken``
+* url ``https://{API ENDPOINT}/invalidtoken``
 
 POST request
 
@@ -30,7 +30,7 @@ Possible errorCodes:
 
 ### Non ok url
 
-* url ``https://{API ENDPOINT}/Prod/nonok``
+* url ``https://{API ENDPOINT}/nonok``
 
 POST request
 
@@ -42,7 +42,7 @@ Returns 503
 
 ### TooOldAppVersionClientError url
 
-* url ``https://{API ENDPOINT}/Prod/old_version``
+* url ``https://{API ENDPOINT}/old_version``
 
 POST request
 
@@ -56,7 +56,7 @@ Possible errorCodes:
 
 ### InternalServerError url
 
-* url ``https://{API ENDPOINT}/Prod/internalerror``
+* url ``https://{API ENDPOINT}/internalerror``
 
 POST request
 
