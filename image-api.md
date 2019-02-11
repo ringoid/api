@@ -111,7 +111,7 @@ Body:
 
     {
         "accessToken":"adasdasd-fadfs-sdffd",
-        "photoId":"lsdkfjlskdjf-sdflksndfl"
+        "photoId":"lsdkfjlskdjf-sdflksndfl"   //it could be originPhotoId's value also 
     }
     
     all parameters are required
