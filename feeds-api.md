@@ -17,10 +17,11 @@ Allowed Sizes:
 * 1080x1440
 * 1440x1920
 
+* 640x852
 * 750x1000
-* 828x1344
-* 1125x1827
-* 1242x2016
+* 828x1104
+* 1125x1500
+* 1242x1656
 
 LIMIT max value is 100, default value is 5
 
@@ -34,7 +35,7 @@ Headers:
     {
         "errorCode":"",
         "errorMessage":"",
-        "repeatRequestAfterSec":0,
+        "repeatRequestAfter":0,
         "profiles":[
             {
                 "userId":"9091127b2a88b002fad4ef55beb0264222c1ebb7",
@@ -78,10 +79,11 @@ Allowed Sizes:
 * 1080x1440
 * 1440x1920
 
+* 640x852
 * 750x1000
-* 828x1344
-* 1125x1827
-* 1242x2016
+* 828x1104
+* 1125x1500
+* 1242x1656
 
 
 Headers:
@@ -94,7 +96,7 @@ Headers:
     {
         "errorCode":"",
         "errorMessage":"",
-        "repeatRequestAfterSec":0,
+        "repeatRequestAfter":0,
         
         "likesYou": [
             {
@@ -171,7 +173,7 @@ Possible errorCodes:
 * sourceIp - string
 * targetUserIds - []string
 * newFaceProfilesNum - int
-* repeatRequestAfterSec - int
+* repeatRequestAfter - int
 * unixTime - int
 * eventType - string (FEEDS_NEW_FACES_SEEN_PROFILES)
 
@@ -182,7 +184,7 @@ Possible errorCodes:
 * likeYouProfilesNum - int
 * matchProfilesNum - int
 * messageProfilesNum - int
-* repeatRequestAfterSec - int
+* repeatRequestAfter - int
 * unixTime - int
 * eventType - string (FEEDS_LLM_PROFILES)
 
