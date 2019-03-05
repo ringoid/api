@@ -103,7 +103,7 @@ Headers:
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
               "notSeen": true,
-              "messages" : [], //ALWAYS EMPTY
+              "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
                 {
                   "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
