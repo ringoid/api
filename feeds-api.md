@@ -68,7 +68,7 @@ Possible errorCodes:
 
 ### Get LMM
 
-* url ``https://{API ENDPOINT}/get_lmm?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345``
+* url ``https://{API ENDPOINT}/get_lmm?accessToken={ACCESS TOKEN}&resolution=480x640&source=matches&lastActionTime=123345``
 
 GET request
 
@@ -85,6 +85,14 @@ Allowed Sizes:
 * 1125x1500
 * 1242x1656
 
+Allowed Values for source:
+
+* new_faces
+* who_liked_me
+* matches
+* messages
+* chat
+* profile
 
 Headers:
 
@@ -181,6 +189,7 @@ Possible errorCodes:
 
 * userId - string
 * sourceIp - string
+* source - string (feed from which lmm was requested)
 * likeYouProfilesNum - int
 * matchProfilesNum - int
 * messageProfilesNum - int
