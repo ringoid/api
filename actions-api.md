@@ -93,15 +93,14 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
         "text":"Hi",
         "actionTime":12342342354 //unix time in milliseconds
 
-6. OPEN_CHAT json with properties
+6. VIEW_CHAT json with properties
 
          
-         "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
-         "actionType":"OPEN_CHAT",
+         "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+         "actionType":"VIEW_CHAT",
          "targetPhotoId":"640x480_ksjdhfkjhhsh",
          "targetUserId":"skdfkjhkjsdhf",
-         "openChatCount":1,
-         "openChatTimeMillis":23,
+         "viewTimeMillis":45,
          "actionTime":12342342354 //unix time in milliseconds
         
 ## Analytics Events
@@ -174,7 +173,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 * unixTime - int
 * eventType - string (ACTION_USER_MESSAGE)
 
-6. ACTION_USER_OPEN_CHAT
+6. ACTION_USER_VIEW_CHAT
 
 * userId - string
 * sourceIp - string
@@ -182,8 +181,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 * photoId - string
 * originPhotoId - string
 * source - string
-* openChatCount - int
-* openChatAt - int
-* openChatTimeSec - int
+* viewAt - int
+* viewTimeMillis - int
 * unixTime - int
-* eventType - string (ACTION_USER_OPEN_CHAT)
+* eventType - string (ACTION_USER_VIEW_CHAT)
