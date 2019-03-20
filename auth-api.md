@@ -25,10 +25,11 @@ Body:
         "dtPN":1535120929, //unix time when Privacy Notes were accepted
         "locale":"en",
         "deviceModel":"device model info",
-        "osVersion":"version of os"
+        "osVersion":"version of os",
+        "referralId":"masha123"
     }
     
-    all parameters are required
+    all parameters except referralId are required
     
  Response Body:
  
@@ -173,6 +174,7 @@ Possible errorCodes:
 * sex - string
 * yearOfBirth - int
 * unixTime - int
+* referralId - string
 * eventType - string (AUTH_USER_PROFILE_CREATED)
 
 3. AUTH_USER_SETTINGS_UPDATED
