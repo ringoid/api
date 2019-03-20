@@ -26,10 +26,11 @@ Body:
         "locale":"en",
         "deviceModel":"device model info",
         "osVersion":"version of os",
-        "referralId":"masha123"
+        "referralId":"masha123",
+        "privateKey":"ksjdhf9-lsdf-223jd"
     }
     
-    all parameters except referralId are required
+    all parameters except referralId and privateKey are required
     
  Response Body:
  
@@ -119,6 +120,41 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
+### Claim referral code
+
+* url ``https://{API ENDPOINT}/claim``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body
+
+    {
+        "accessToken":"adasdasd-fadfs-sdffd",
+        "referralId":"masha2001"
+    }
+
+    
+    all aprameters are required
+    
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":""
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+
 ### Get user's settings
 
 * url ``https://{API ENDPOINT}/get_settings?accessToken={ACCESS TOKEN}``
@@ -175,6 +211,7 @@ Possible errorCodes:
 * yearOfBirth - int
 * unixTime - int
 * referralId - string
+* privateKey - string
 * eventType - string (AUTH_USER_PROFILE_CREATED)
 
 3. AUTH_USER_SETTINGS_UPDATED
@@ -204,3 +241,10 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (AUTH_USER_CALL_DELETE_HIMSELF)
 
+6. AUTH_USER_CLAIM_REFERRAL_CODE
+
+* userId - string
+* sourceIp - string
+* referralId - string
+* unixTime - int
+* eventType - string (AUTH_USER_CLAIM_REFERRAL_CODE)
