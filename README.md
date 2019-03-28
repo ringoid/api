@@ -7,6 +7,8 @@
 
 [Feeds service API](https://github.com/ringoid/api/blob/master/feeds-api.md)
 
+[Push service API](https://github.com/ringoid/api/blob/master/push-api.md)
+
 [Errors service API](https://github.com/ringoid/api/blob/master/errors-api.md) 
 
 

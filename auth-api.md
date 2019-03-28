@@ -23,11 +23,15 @@ Body:
         "dtTC":1535120929, //unix time when Terms and Conditions were accepted
         "dtLA":1535120929, //unix time when Legal age was confirmed
         "dtPN":1535120929, //unix time when Privacy Notes were accepted
-        "locale":"en",
         "deviceModel":"device model info",
         "osVersion":"version of os",
         "referralId":"masha123",
         "privateKey":"ksjdhf9-lsdf-223jd"
+        "settings":{
+                    "locale":"en",
+                    "push":true,
+                    "timeZone":3
+                   }
     }
     
     all parameters except referralId and privateKey are required
@@ -64,13 +68,12 @@ Body:
 
     {
         "accessToken":"adasdasd-fadfs-sdffd",
-        "safeDistanceInMeter":0, //default value is 0
-        "pushMessages":true,     //default value is false
-        "pushMatches":true,      //default value is false
-        "pushLikes":"EVERY"      //possible values NONE/EVERY/10_NEW/100_NEW 
+        "locale":"en",
+        "push":true,
+        "timeZone":3
     }
     
-    accessToken and pushLikes are required params
+    accessToken is required params, also one other property should be presented
     
  Response Body:
  
@@ -192,7 +195,6 @@ Possible errorCodes:
 * userId - string
 * sourceIp - string
 * unixTime - int
-* locale - string
 * dtTC - date and time when Terms and conditions were accepted
 * dtPN - date and time when Privacy Notes were accepted
 * dtLA - date and time when Legal age was confirmed
@@ -218,10 +220,9 @@ Possible errorCodes:
 
 * userId - string
 * sourceIp - string
-* safeDistanceInMeter - int
-* pushMessages - bool
-* pushMatches - bool
-* pushLikes - string
+* locale - string
+* push - bool
+* timeZone - int
 * unixTime - int
 * eventType - string (AUTH_USER_SETTINGS_UPDATED)
 
