@@ -34,7 +34,7 @@ Body:
                    }
     }
     
-    all parameters except referralId and privateKey are required
+    all parameters except referralId, privateKey and settings are required
     
  Response Body:
  
@@ -73,7 +73,7 @@ Body:
         "timeZone":3
     }
     
-    accessToken is required params, also one other property should be presented
+    accessToken is required
     
  Response Body:
  
@@ -158,36 +158,6 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
-### Get user's settings
-
-* url ``https://{API ENDPOINT}/get_settings?accessToken={ACCESS TOKEN}``
-
-GET request
-
-Headers:
-
-* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
-* Content-Type : application/json
-
- Response Body:
- 
-    {
-        "errorCode":"",
-        "errorMessage":"",
-        "whoCanSeePhoto":"OPPOSITE", 
-        "safeDistanceInMeter":0,
-        "pushMessages":true,
-        "pushMatches":true,
-        "pushLikes":"EVERY"
-    }
-    
-Possible errorCodes:
-
-* InternalServerError
-* WrongRequestParamsClientError
-* InvalidAccessTokenClientError
-* TooOldAppVersionClientError
-
 ## Analytics Events
 
 1. AUTH_USER_ACCEPT_TERMS
@@ -221,8 +191,11 @@ Possible errorCodes:
 * userId - string
 * sourceIp - string
 * locale - string
+* wasLocaleChanged - bool
 * push - bool
+* wasPushChanged - bool
 * timeZone - int
+* wasTimeZoneChanged - bool
 * unixTime - int
 * eventType - string (AUTH_USER_SETTINGS_UPDATED)
 
