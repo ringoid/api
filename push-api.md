@@ -3,15 +3,6 @@
 ### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/push``
 ### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/push``
 
-### Push message payload
-
-    {
-     "id":"skjdfhhksk-sdlf",
-     "type":"system|deeplink|message",
-     "targetUrl":"https://...",   (for 'deeplink' only)
-     "text":"some text"
-    }
-
 ### Register device token
 
 * url ``https://{API ENDPOINT}/update_token``
