@@ -3,6 +3,15 @@
 ### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/actions``
 ### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/actions``
 
+### Report reasons
+
+* report_profile_button_0 = Inappropriate message
+* report_profile_button_1 = Inappropriate photo
+* report_profile_button_2 = Stolen photo, Copyright infringement
+* report_profile_button_3 = Spam, Advertising, Commercial activity
+* report_profile_button_4 = Human and sex trafficking, Criminal activity
+* report_profile_button_5 = Underage user, Child exploitation
+* report_profile_button_6 = Harassment or threats, Abuse
 
 ### Action url
 
