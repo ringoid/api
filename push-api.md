@@ -47,3 +47,10 @@ Possible errorCodes:
 * sourceIp - string
 * unixTime - int
 * eventType - string (PUSH_REGISTER_DEVICE_TOKEN)
+
+2. PUSH_WAS_SENT
+
+* userId - string
+* pushType - string (base/)
+* unixTime - int
+* eventType - string (PUSH_WAS_SENT)
