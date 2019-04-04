@@ -54,7 +54,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 
 1. LIKE json with properties:
         
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
         "actionType":"LIKE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -64,7 +64,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 2. VIEW json with properties:
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
         "actionType":"VIEW",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -76,7 +76,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 3. BLOCK json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
         "actionType":"BLOCK",
         "targetUserId":"skdfkjhkjsdhf",
         "targetPhotoId":"sldfnlskdj",
@@ -86,7 +86,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 4. UNLIKE json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
         "actionType":"UNLIKE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -95,7 +95,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 5. MESSAGE json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages, chat
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages
         "actionType":"MESSAGE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
