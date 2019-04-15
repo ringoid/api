@@ -112,6 +112,13 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
          "viewTimeMillis":45,
          "actionTime":12342342354 //unix time in milliseconds
         
+7. LOCATION json with properties
+
+          "actionType":"LOCATION",
+          "lat":12345.123467657,
+          "lon":12346.123456456,
+          "actionTime":12342342354 //unix time in milliseconds
+
 ## Analytics Events
 
 1. ACTION_USER_LIKE_PHOTO
@@ -194,3 +201,13 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 * viewTimeMillis - int
 * unixTime - int
 * eventType - string (ACTION_USER_VIEW_CHAT)
+
+7. ACTION_USER_CHANGE_LOCATION
+
+* userId - string
+* sourceIp - string
+* lat - float
+* lon - float
+* updatedLocationTime - int
+* unixTime - int
+* eventType - string (ACTION_USER_CHANGE_LOCATION)
