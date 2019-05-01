@@ -64,7 +64,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 2. VIEW json with properties:
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, hellos, inbox, sent
         "actionType":"VIEW",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -76,7 +76,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 3. BLOCK json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, hellos, inbox, sent
         "actionType":"BLOCK",
         "targetUserId":"skdfkjhkjsdhf",
         "targetPhotoId":"sldfnlskdj",
@@ -95,7 +95,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 5. MESSAGE json with properties
 
 
-        "sourceFeed":"new_faces", // who_liked_me, matches, messages
+        "sourceFeed":"new_faces", // who_liked_me, matches, messages, hellos, inbox, sent
         "actionType":"MESSAGE",
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
@@ -105,7 +105,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 6. VIEW_CHAT json with properties
 
          
-         "sourceFeed":"who_liked_me", // who_liked_me, matches, messages
+         "sourceFeed":"who_liked_me", // who_liked_me, matches, messages, hellos, inbox, sent
          "actionType":"VIEW_CHAT",
          "targetPhotoId":"640x480_ksjdhfkjhhsh",
          "targetUserId":"skdfkjhkjsdhf",
