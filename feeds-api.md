@@ -43,15 +43,18 @@ Headers:
                 "photos": [
                         {
                           "photoId": "480x640_sfsdfsdfsdf",
-                          "photoUri": "https://bla-bla.jpg"
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
                         },
                         {
                           "photoId": "480x640_gfgsdfsdf",
-                          "photoUri": "https://bla-bla.jpg"
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
                         },
                         {
                           "photoId": "480x640_gfdsfsdfsdf",
-                          "photoUri": "https://bla-bla.jpg"
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
                         }
                 ]
             },
@@ -115,7 +118,8 @@ Headers:
               "photos": [
                 {
                   "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
-                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/52e08292d10cacf2f40abe5542513187270bb182_480x640.jpg"
+                  "photoUri": "https://bla-bla.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
                 },
                 ....
               ]
@@ -127,7 +131,8 @@ Headers:
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                  "photoUri": "https://bla-bla.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
                 },
                 ....
               ]
@@ -143,7 +148,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://bla-bla.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ],
@@ -159,7 +165,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ]
@@ -225,7 +232,8 @@ Headers:
               "photos": [
                 {
                   "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
-                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/52e08292d10cacf2f40abe5542513187270bb182_480x640.jpg"
+                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/52e08292d10cacf2f40abe5542513187270bb182_480x640.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
                 },
                 ....
               ]
@@ -237,7 +245,8 @@ Headers:
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                  "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
                 },
                 ....
               ]
@@ -253,7 +262,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ],
@@ -270,7 +280,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ],
@@ -285,7 +296,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ],
@@ -300,7 +312,8 @@ Headers:
                "photos": [
                  {
                     "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
-                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg"
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
                  },
                  ...
         ]
