@@ -30,6 +30,9 @@ Body:
         "settings":{
                     "locale":"en",
                     "push":true,
+                    "pushNewLike":true,
+                    "pushNewMessage":true,
+                    "pushNewMatch":true,
                     "timeZone":3
                    }
     }
@@ -70,6 +73,9 @@ Body:
         "accessToken":"adasdasd-fadfs-sdffd",
         "locale":"en",
         "push":true,
+        "pushNewLike":true,
+        "pushNewMessage":true,
+        "pushNewMatch":true,
         "timeZone":3
     }
     
@@ -193,7 +199,13 @@ Possible errorCodes:
 * locale - string
 * wasLocaleChanged - bool
 * push - bool
+* pushNewLike - bool
+* pushNewMatch - bool
+* pushNewMessage - bool
 * wasPushChanged - bool
+* wasPushNewLikeChanged - bool
+* wasPushNewMatchChanged - bool
+* wasPushNewMessageChanged - bool
 * timeZone - int
 * wasTimeZoneChanged - bool
 * unixTime - int
