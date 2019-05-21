@@ -72,7 +72,7 @@
 * url ``https://{API ENDPOINT}/update_token``
 
 !!! VALID METHOD
-* url ``https://{API ENDPOINT}/update_fmc_token``
+* url ``https://{API ENDPOINT}/update_fcm_token``
 
 POST request
 
