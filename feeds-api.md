@@ -40,6 +40,11 @@ Headers:
             {
                 "userId":"9091127b2a88b002fad4ef55beb0264222c1ebb7",
                 "defaultSortingOrderPosition":0,
+
+                "lastOnlineText":"online",
+                "lastOnlineFlag":"online",
+                "distanceText":"<1km", //<1км
+
                 "photos": [
                         {
                           "photoId": "480x640_sfsdfsdfsdf",
@@ -61,7 +66,24 @@ Headers:
             ...
         ]
     }
-    
+
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
+
 Possible errorCodes:
 
 * InternalServerError
@@ -113,6 +135,11 @@ Headers:
             {
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
+
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
@@ -127,6 +154,11 @@ Headers:
             {
               "userId": "fsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 1,
+
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+
               "notSeen": false,
               "photos": [
                 {
@@ -143,6 +175,11 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
+
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+
                "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
                "photos": [
@@ -158,6 +195,11 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
+
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
@@ -173,6 +215,23 @@ Headers:
         
     }
     
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
+ 
 Possible errorCodes:
 
 * InternalServerError
@@ -319,7 +378,7 @@ Headers:
         ]
         
     }
-    
+
 Possible errorCodes:
 
 * InternalServerError

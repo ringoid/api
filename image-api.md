@@ -70,6 +70,9 @@ Headers:
  Response Body:
  
     {
+        "lastOnlineText":"online",
+        "lastOnlineFlag":"online",
+        "distanceText":"<1km", //<1км
         "errorCode":"",
         "errorMessage":"",
         "photos":[
@@ -90,6 +93,23 @@ Headers:
         ]
     }
     
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
+
 Possible errorCodes:
 
 * InternalServerError
