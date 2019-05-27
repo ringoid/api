@@ -44,7 +44,7 @@ Headers:
                 "lastOnlineText":"online",
                 "lastOnlineFlag":"online",
                 "distanceText":"<1km", //<1км
-
+                "age":37,
                 "photos": [
                         {
                           "photoId": "480x640_sfsdfsdfsdf",
@@ -139,7 +139,7 @@ Headers:
               "lastOnlineText":"online",
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
-
+              "age":37,
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
@@ -158,7 +158,7 @@ Headers:
               "lastOnlineText":"online",
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
-
+              "age":37,
               "notSeen": false,
               "photos": [
                 {
@@ -179,7 +179,7 @@ Headers:
                "lastOnlineText":"online",
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
-
+               "age":37,
                "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
                "photos": [
@@ -199,7 +199,7 @@ Headers:
                "lastOnlineText":"online",
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
-
+               "age":37,
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
@@ -286,6 +286,10 @@ Headers:
             {
               "userId": "fdsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 0,
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+              "age":37,
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
@@ -301,6 +305,10 @@ Headers:
               "userId": "fsdfsdfsdfsdfsdf",
               "defaultSortingOrderPosition": 1,
               "notSeen": false,
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+              "age":37,
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -317,6 +325,10 @@ Headers:
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
                "notSeen": true,
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+               "age":37,
                "messages" : [], //ALWAYS EMPTY
                "photos": [
                  {
@@ -332,6 +344,10 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+               "age":37,
                "notSeen": false,
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":false,"text":"Hi"}
@@ -348,6 +364,10 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+               "age":37,
                "notSeen": true, 
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":false,"text":"Hi"}
@@ -364,6 +384,10 @@ Headers:
             {
                "userId": "fsdfsdfsdfsdfsdf",
                "defaultSortingOrderPosition": 0,
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+               "age":37,
                "notSeen": true,
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
@@ -378,6 +402,23 @@ Headers:
         ]
         
     }
+
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
 
 Possible errorCodes:
 
