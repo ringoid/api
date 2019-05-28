@@ -148,7 +148,45 @@ Body
     }
 
     
-    all aprameters are required
+    all parameters are required
+    
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":""
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+
+### Update profile's info
+
+* url ``https://{API ENDPOINT}/update_profile``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body
+
+    {
+        "accessToken":"adasdasd-fadfs-sdffd",
+        "property":0,
+        "transport":10,
+        "income":20,
+        "height":150,
+    }
+
+    
+    all parameters are required, possible values (here)[https://docs.google.com/spreadsheets/d/1S7k_VQ6mBXTJjvZoPuqiyamrhZWquT3LnPHwV2Z-gDE/edit#gid=0]
     
  Response Body:
  
@@ -234,3 +272,14 @@ Possible errorCodes:
 * referralId - string
 * unixTime - int
 * eventType - string (AUTH_USER_CLAIM_REFERRAL_CODE)
+
+7. AUTH_USER_UPDATE_PROFILE
+
+* userId - string
+* sourceIp - string
+* property - int
+* transport - int
+* income - int
+* height - int
+* unixTime - int
+* eventType - string (AUTH_USER_UPDATE_PROFILE)

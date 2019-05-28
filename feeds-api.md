@@ -45,6 +45,12 @@ Headers:
                 "lastOnlineFlag":"online",
                 "distanceText":"<1km", //<1км
                 "age":37,
+                
+                "property":0,
+                "transport":10,
+                "income":20,
+                "height":150,
+
                 "photos": [
                         {
                           "photoId": "480x640_sfsdfsdfsdf",
@@ -140,6 +146,12 @@ Headers:
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
               "age":37,
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+                              
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
@@ -159,6 +171,12 @@ Headers:
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
               "age":37,
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+                            
               "notSeen": false,
               "photos": [
                 {
@@ -180,6 +198,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
                "photos": [
@@ -200,6 +224,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
@@ -290,6 +320,12 @@ Headers:
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
               "age":37,
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+                            
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
               "photos": [
@@ -309,6 +345,12 @@ Headers:
               "lastOnlineFlag":"online",
               "distanceText":"<1km", //<1км
               "age":37,
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+              
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -329,6 +371,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "messages" : [], //ALWAYS EMPTY
                "photos": [
                  {
@@ -348,6 +396,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "notSeen": false,
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":false,"text":"Hi"}
@@ -368,6 +422,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "notSeen": true, 
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":false,"text":"Hi"}
@@ -388,6 +448,12 @@ Headers:
                "lastOnlineFlag":"online",
                "distanceText":"<1km", //<1км
                "age":37,
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+                             
                "notSeen": true,
                "messages" : [
                     {"wasYouSender":false,"text":"Hi"}, {"wasYouSender":true,"text":"Hi"}
