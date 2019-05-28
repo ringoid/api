@@ -121,3 +121,10 @@ Possible errorCodes:
 * pushType - string (base/)
 * unixTime - int
 * eventType - string (PUSH_WAS_SENT)
+
+3. DATA_PUSH_WAS_SENT
+
+* userId - string
+* pushType - string (base/)
+* unixTime - int
+* eventType - string (DATA_PUSH_WAS_SENT)
