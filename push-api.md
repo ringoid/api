@@ -28,7 +28,8 @@
             },
             
             "data" : {
-            "type" : "NEW_LIKE_PUSH_TYPE"
+            "type" : "NEW_LIKE_PUSH_TYPE",
+            "oppositeUserId":"sldkfjjj939i4"
             }
             }
         }
@@ -44,7 +45,8 @@
             },
             
             "data" : {
-            "type" : "NEW_MATCH_PUSH_TYPE"
+            "type" : "NEW_MATCH_PUSH_TYPE",
+            "oppositeUserId":"sldkfjjj939i4"
             }
             }
         }
@@ -60,7 +62,8 @@
             },
             
             "data" : {
-            "type" : "NEW_MESSAGE_PUSH_TYPE"
+            "type" : "NEW_MESSAGE_PUSH_TYPE",
+            "oppositeUserId":"sldkfjjj939i4"
             }
             }
         }
