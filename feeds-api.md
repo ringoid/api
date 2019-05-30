@@ -493,6 +493,94 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
+### Get Chat
+
+* url ``https://{API ENDPOINT}/chat?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345&userId=kjdshfhhfj1``
+
+GET request
+
+Allowed Sizes:
+
+* 480x640
+* 720x960
+* 1080x1440
+* 1440x1920
+
+* 640x852
+* 750x1000
+* 828x1104
+* 1125x1500
+* 1242x1656
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":"",
+        
+        "repeatRequestAfter":0,
+        "chatExists": true,
+        "poolAgainAfter": 3000
+       
+        "chat": {
+            "userId": "5bdc880d91d60b28b17ab2e58bf4a7c6ab83091e",
+            "defaultSortingOrderPosition": 0,
+            "lastOnlineText": "18мин назад",
+            "lastOnlineFlag": "online",
+            "distanceText": "unknown",
+            "notSeen": false,
+            "photos": [
+              {
+                "photoId": "480x640_f34fe06440021c07b4dd3ad77e12475a0cb3640f",
+                "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/f34fe06440021c07b4dd3ad77e12475a0cb3640f_480x640.jpg",
+                "thumbnailPhotoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/f34fe06440021c07b4dd3ad77e12475a0cb3640f_thumbnail.jpg"
+              }
+            ],
+            "messages": [
+              {
+                "wasYouSender": false,
+                "text": "Hello!"
+              }
+            ],
+            "age": 37,
+            "property": 0,
+            "transport": 0,
+            "income": 0,
+            "height": 0
+          },
+        }
+    }
+    
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
+ 
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+
+
 ## Analytics Events
 
 1. FEEDS_NEW_FACES_SEEN_PROFILES
@@ -530,4 +618,15 @@ Possible errorCodes:
 * repeatRequestAfter - int
 * unixTime - int
 * eventType - string (FEEDS_LMHIS_PROFILES)
+
+3. FEEDS_CHAT_WAS_RETURNED
+
+* userId - string
+* sourceIp - string
+* oppositeUserId - string
+* messageNum - int
+* repeatRequestAfter - int
+* poolAgainAfter - int
+* unixTime - int
+* eventType - string (FEEDS_CHAT_WAS_RETURNED)
 
