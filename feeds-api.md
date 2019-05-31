@@ -525,7 +525,7 @@ Headers:
         
         "repeatRequestAfter":0,
         "chatExists": true,
-        "poolAgainAfter": 3000
+        "pullAgainAfter": 3000
        
         "chat": {
             "userId": "5bdc880d91d60b28b17ab2e58bf4a7c6ab83091e",
@@ -552,7 +552,6 @@ Headers:
             "transport": 0,
             "income": 0,
             "height": 0
-          },
         }
     }
     
@@ -626,7 +625,7 @@ Possible errorCodes:
 * oppositeUserId - string
 * messageNum - int
 * repeatRequestAfter - int
-* poolAgainAfter - int
+* pullAgainAfter - int
 * unixTime - int
 * eventType - string (FEEDS_CHAT_WAS_RETURNED)
 
