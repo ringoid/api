@@ -183,6 +183,8 @@ Body
         "transport":10,
         "income":20,
         "height":150,
+        "educationLevel":10,
+        "hairColor":0
     }
 
     
@@ -281,5 +283,7 @@ Possible errorCodes:
 * transport - int
 * income - int
 * height - int
+* hairColor - int
+* educationLevel - int
 * unixTime - int
 * eventType - string (AUTH_USER_UPDATE_PROFILE)
