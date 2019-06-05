@@ -54,6 +54,7 @@ Headers:
                 "height":150,
                 "educationLevel":10,
                 "hairColor":0,
+                "children":0,
 
                 "photos": [
                         {
@@ -164,6 +165,7 @@ Headers:
               "height":150,
               "educationLevel":10,
               "hairColor":0,
+              "children":0,
                               
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -192,6 +194,7 @@ Headers:
               "height":150,
               "educationLevel":10,
               "hairColor":0,
+              "children":0,
                            
               "notSeen": false,
               "photos": [
@@ -222,6 +225,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                             
                "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
@@ -251,6 +255,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                                          
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
@@ -356,6 +361,7 @@ Headers:
               "height":150,
               "educationLevel":10,
               "hairColor":0,
+              "children":0,
                                           
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -384,6 +390,7 @@ Headers:
               "height":150,
               "educationLevel":10,
               "hairColor":0,
+              "children":0,
                             
               "photos": [
                 {
@@ -413,6 +420,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                                           
                "messages" : [], //ALWAYS EMPTY
                "photos": [
@@ -441,6 +449,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                                            
                "notSeen": false,
                "messages" : [
@@ -470,6 +479,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                                            
                "notSeen": true, 
                "messages" : [
@@ -499,6 +509,7 @@ Headers:
                "height":150,
                "educationLevel":10,
                "hairColor":0,
+               "children":0,
                                           
                "notSeen": true,
                "messages" : [
@@ -606,7 +617,8 @@ Headers:
             "income": 0,
             "height": 0,
             "educationLevel":10,
-            "hairColor":0
+            "hairColor":0,
+            "children":0,
         }
     }
     

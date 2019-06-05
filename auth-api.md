@@ -184,7 +184,8 @@ Body
         "income":20,
         "height":150,
         "educationLevel":10,
-        "hairColor":0
+        "hairColor":0,
+        "children":0
     }
 
     
@@ -284,6 +285,7 @@ Possible errorCodes:
 * income - int
 * height - int
 * hairColor - int
+* children - int
 * educationLevel - int
 * unixTime - int
 * eventType - string (AUTH_USER_UPDATE_PROFILE)
