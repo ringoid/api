@@ -3,6 +3,110 @@
 ### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/auth``
 ### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/auth``
 
+### Login
+
+* url ``https://{API ENDPOINT}/login_with_email``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body:
+
+    {
+        "email":"vova@mail.ru"
+    }
+    
+    parameter is required
+    
+ Response Body:
+ 
+    {
+        "authSessionId":"adasdasd-fadfs-sdffd",
+        "errorCode":"",
+        "errorMessage":""
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* TooOldAppVersionClientError
+* EmailNotVerifiedClientError
+
+### Verify email
+
+* url ``https://{API ENDPOINT}/verify_email``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body:
+
+    {
+        "authSessionId":"adasdasd-fadfs-sdffd",
+        "email":"vova@mail.ru",
+        "pinCode":"12345"
+    }
+    
+    all parameters are required
+    
+ Response Body:
+ 
+    {
+        "accessToken":"adasdasd-fadfs-sdffd",
+        "errorCode":"",
+        "errorMessage":""
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* TooOldAppVersionClientError
+* EmailInvalidVerificationClientError
+
+### Change email
+
+* url ``https://{API ENDPOINT}/change_email``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body:
+
+    {
+        "accessToken":"adasdasd-fadfs-sdffd",
+        "newEmail":"sasha@gmail.com"
+    }
+    
+    all parameters are required
+    
+ Response Body:
+ 
+    {
+        "authSessionId":"adasdasd-fadfs-sdffd", //will be in response only in case of EmailNotVerifiedClientError error code
+        "errorCode":"",
+        "errorMessage":""
+    }
+    
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* EmailNotVerifiedClientError
 
 ### Create user profile
 
@@ -17,7 +121,9 @@ Headers:
 
 Body:
 
-    {
+    {   
+        "authSessionId":"adasdasd-fadfs-sdffd",
+        "email":"slava@mail.ru",
         "yearOfBirth":1982,
         "sex":"male" // possible values are **male** or **female**,
         "dtTC":1535120929, //unix time when Terms and Conditions were accepted
@@ -54,6 +160,72 @@ Possible errorCodes:
 * WrongYearOfBirthClientError
 * WrongSexClientError
 * WrongRequestParamsClientError
+* TooOldAppVersionClientError
+* EmailConcurrentUsageClientError
+
+### Get user's profile
+
+* url ``https://{API ENDPOINT}/get_profile?accessToken={ACCESS TOKEN}``
+
+GET request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":"",
+        
+        "customerId":"ksjdhfha-asff",
+        
+        "lastOnlineText":"online",
+        "lastOnlineFlag":"online",
+        "distanceText":"<1km", //<1км
+                
+        "yearOfBirth":1982,
+        "sex":"female",
+                
+        "property":0,
+        "transport":10,
+        "income":20,
+        "height":150,
+        "educationLevel":10,
+        "hairColor":0,
+        "children":0,
+    }
+
+Possible values for `lastOnlineText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `distanceText`
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `sex`
+
+* `male`
+* `female`
+* `unknown`
+
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
 * TooOldAppVersionClientError
 
 ### Update user's settings
