@@ -56,6 +56,16 @@ Headers:
                 "hairColor":0,
                 "children":0,
 
+                "name":"Mikhail",
+                "jobTitle":"Developer",
+                "company":"Ringoid",
+                "education":"BGTU Voenmeh",
+                "about":"Nice person",
+                "instagram":"unknown",
+                "tikTok":"unknown",
+                "whereLive":"St.Petersburg",
+                "whereFrom":"Leningrad",
+                        
                 "photos": [
                         {
                           "photoId": "480x640_sfsdfsdfsdf",
@@ -78,7 +88,8 @@ Headers:
         ]
     }
 
-Possible values for `lastOnlineText`
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
 
 * any text (include empty string)
 * `unknown`
@@ -88,11 +99,6 @@ Possible values for `lastOnlineFlag`
 * `online`
 * `away`
 * `offline`
-* `unknown`
-
-Possible values for `distanceText`
-
-* any text (include empty string)
 * `unknown`
 
 Possible values for `sex`
@@ -166,6 +172,16 @@ Headers:
               "educationLevel":10,
               "hairColor":0,
               "children":0,
+              
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
                               
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -195,6 +211,16 @@ Headers:
               "educationLevel":10,
               "hairColor":0,
               "children":0,
+
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
                            
               "notSeen": false,
               "photos": [
@@ -226,6 +252,16 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
                             
                "notSeen": true,
                "messages" : [], //ALWAYS EMPTY
@@ -256,6 +292,16 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
                                          
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
@@ -272,7 +318,8 @@ Headers:
         
     }
     
-Possible values for `lastOnlineText`
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
 
 * any text (include empty string)
 * `unknown`
@@ -282,11 +329,6 @@ Possible values for `lastOnlineFlag`
 * `online`
 * `away`
 * `offline`
-* `unknown`
-
-Possible values for `distanceText`
-
-* any text (include empty string)
 * `unknown`
 
 Possible values for `sex`
@@ -362,6 +404,16 @@ Headers:
               "educationLevel":10,
               "hairColor":0,
               "children":0,
+
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
                                           
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -391,7 +443,17 @@ Headers:
               "educationLevel":10,
               "hairColor":0,
               "children":0,
-                            
+
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
+                             
               "photos": [
                 {
                   "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
@@ -421,7 +483,17 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
-                                          
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
+                                           
                "messages" : [], //ALWAYS EMPTY
                "photos": [
                  {
@@ -450,6 +522,16 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
                                            
                "notSeen": false,
                "messages" : [
@@ -480,6 +562,16 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
                                            
                "notSeen": true, 
                "messages" : [
@@ -510,6 +602,16 @@ Headers:
                "educationLevel":10,
                "hairColor":0,
                "children":0,
+               
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
                                           
                "notSeen": true,
                "messages" : [
@@ -526,7 +628,8 @@ Headers:
         
     }
 
-Possible values for `lastOnlineText`
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
 
 * any text (include empty string)
 * `unknown`
@@ -536,11 +639,6 @@ Possible values for `lastOnlineFlag`
 * `online`
 * `away`
 * `offline`
-* `unknown`
-
-Possible values for `distanceText`
-
-* any text (include empty string)
 * `unknown`
 
 Possible values for `sex`
@@ -619,10 +717,22 @@ Headers:
             "educationLevel":10,
             "hairColor":0,
             "children":0,
+
+            "name":"Mikhail",
+            "jobTitle":"Developer",
+            "company":"Ringoid",
+            "education":"BGTU Voenmeh",
+            "about":"Nice person",
+            "instagram":"unknown",
+            "tikTok":"unknown",
+            "whereLive":"St.Petersburg",
+            "whereFrom":"Leningrad",              
+            
         }
     }
     
-Possible values for `lastOnlineText`
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
 
 * any text (include empty string)
 * `unknown`
@@ -632,11 +742,6 @@ Possible values for `lastOnlineFlag`
 * `online`
 * `away`
 * `offline`
-* `unknown`
-
-Possible values for `distanceText`
-
-* any text (include empty string)
 * `unknown`
 
 Possible values for `sex`

@@ -196,9 +196,19 @@ Headers:
         "educationLevel":10,
         "hairColor":0,
         "children":0,
+        "name":"Mikhail",
+        "jobTitle":"Developer",
+        "company":"Ringoid",
+        "education":"BGTU Voenmeh",
+        "about":"Nice person",
+        "instagram":"unknown",
+        "tikTok":"unknown",
+        "whereLive":"St.Petersburg",
+        "whereFrom":"Leningrad"
     }
 
-Possible values for `lastOnlineText`
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
 
 * any text (include empty string)
 * `unknown`
@@ -208,11 +218,6 @@ Possible values for `lastOnlineFlag`
 * `online`
 * `away`
 * `offline`
-* `unknown`
-
-Possible values for `distanceText`
-
-* any text (include empty string)
 * `unknown`
 
 Possible values for `sex`
@@ -358,6 +363,15 @@ Body
         "educationLevel":10,
         "hairColor":0,
         "children":0
+        "name":"Mikhail",
+        "jobTitle":"Developer",
+        "company":"Ringoid",
+        "education":"BGTU Voenmeh",
+        "about":"Nice person",
+        "instagram":"",
+        "tikTok":"",
+        "whereLive":"St.Petersburg",
+        "whereFrom":"Leningrad"
     }
 
     
@@ -459,5 +473,14 @@ Possible errorCodes:
 * hairColor - int
 * children - int
 * educationLevel - int
+* name - string,
+* jobTitle - string,
+* company - string,
+* education - string,
+* about - string,
+* instagram - string,
+* tikTok - string,
+* whereLive - string,
+* whereFrom - string,
 * unixTime - int
 * eventType - string (AUTH_USER_UPDATE_PROFILE)
