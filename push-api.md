@@ -106,6 +106,7 @@ Possible errorCodes:
 * InternalServerError
 * WrongRequestParamsClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ## Analytics Events
 

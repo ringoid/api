@@ -41,6 +41,7 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * WrongRequestParamsClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Get user's own photos
 
@@ -116,6 +117,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Delete user's photo
 
@@ -150,6 +152,7 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * WrongRequestParamsClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 
 ## Analytics Events

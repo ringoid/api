@@ -47,6 +47,7 @@ Possible errorCodes:
 * InvalidAccessTokenClientError
 * WrongRequestParamsClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ## Possible ACTION_OBJECTS
 

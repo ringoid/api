@@ -113,6 +113,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Get LMM
 
@@ -343,6 +344,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Get LMHIS
 
@@ -653,6 +655,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Get Chat
 
@@ -756,6 +759,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 
 ## Analytics Events

@@ -232,6 +232,8 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
+
 
 ### Update user's settings
 
@@ -271,6 +273,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Delete user's account
 
@@ -305,6 +308,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Claim referral code
 
@@ -340,6 +344,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ### Update profile's info
 
@@ -390,6 +395,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
 * TooOldAppVersionClientError
+* EmailNotVerifiedClientError
 
 ## Analytics Events
 
@@ -411,6 +417,7 @@ Possible errorCodes:
 2. AUTH_USER_PROFILE_CREATED
 
 * userId - string
+* email - string
 * sourceIp - string
 * sex - string
 * yearOfBirth - int
