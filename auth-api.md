@@ -72,6 +72,7 @@ Possible errorCodes:
 * WrongRequestParamsClientError
 * TooOldAppVersionClientError
 * EmailInvalidVerificationClientError
+* WrongPinCodeClientError
 
 ### Change email
 
