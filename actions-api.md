@@ -101,6 +101,7 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
         "targetPhotoId":"640x480_ksjdhfkjhhsh",
         "targetUserId":"skdfkjhkjsdhf",
         "text":"Hi",
+        "clientMsgId":"sdfdsf23323dasd",
         "actionTime":12342342354 //unix time in milliseconds
 
 6. VIEW_CHAT json with properties

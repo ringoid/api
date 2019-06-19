@@ -306,7 +306,7 @@ Headers:
                                          
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [
-                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}, {"wasYouSender":true,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}
+                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112",msgAt":12894399}, {"wasYouSender":true,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}
                ],
                "photos": [
                  {
@@ -537,7 +537,7 @@ Headers:
                                            
                "notSeen": false,
                "messages" : [
-                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}, {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}
+                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}, {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}
                ],
                "photos": [
                  {
@@ -577,7 +577,7 @@ Headers:
                                            
                "notSeen": true, 
                "messages" : [
-                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}, {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}
+                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}, {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}
                ],
                "photos": [
                  {
@@ -617,7 +617,7 @@ Headers:
                                           
                "notSeen": true,
                "messages" : [
-                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}, {"wasYouSender":true,"text":"Hi","msgId":"sdkjfh-12j","msgAt":12894399}
+                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}, {"wasYouSender":true,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}
                ],
                "photos": [
                  {
@@ -710,6 +710,7 @@ Headers:
                 "wasYouSender": false,
                 "text": "Hello!",
                 "msgId": "ajkdhf-2j3-sdf",
+                "clientMsgId":"sadf112",
                 "msgAt":1208430928740
               }
             ],
