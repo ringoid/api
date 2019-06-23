@@ -97,7 +97,6 @@ Body:
  Response Body:
  
     {
-        "authSessionId":"adasdasd-fadfs-sdffd", //will be in response only in case of EmailNotVerifiedClientError error code
         "errorCode":"",
         "errorMessage":""
     }
@@ -107,7 +106,7 @@ Possible errorCodes:
 * InternalServerError
 * WrongRequestParamsClientError
 * InvalidAccessTokenClientError
-* EmailNotVerifiedClientError
+* EmailAlreadyInUseClientError
 
 ### Create user profile
 
@@ -492,3 +491,12 @@ Possible errorCodes:
 * whereFrom - string,
 * unixTime - int
 * eventType - string (AUTH_USER_UPDATE_PROFILE)
+
+8. AUTH_USER_CHANGE_EMAIL
+
+* userId - string
+* sourceIp - string
+* oldEmail - string
+* newEmail - string
+* unixTime - int
+* eventType - string (AUTH_USER_CHANGE_EMAIL)
