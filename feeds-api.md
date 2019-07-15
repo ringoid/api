@@ -4,6 +4,138 @@
 ### STAGE API ENDPOINT IS ``https://stage.ringoidapp.com/feeds``
 ### PROD API ENDPOINT IS ``https://prod.ringoidapp.com/feeds``
 
+### Discover
+
+* url ``https://{API ENDPOINT}/discover``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body:
+
+    {
+        "accessToken":"adfsdfsdfsdfsdfs",
+        "resolution":"480x640",
+        "lastActionTime":12345345,
+        "limit":20,
+        "filter":{
+                   "minAge":18,
+                   "maxAge":33,
+                   "maxDistance":5000, //in a meters
+                  }
+    }
+    
+    accessToken, resolution and lastActionTime are required
+    filter and limit could be absent, in this case server will use default value
+
+Allowed Sizes:
+
+* 480x640
+* 720x960
+* 1080x1440
+* 1440x1920
+
+* 640x852
+* 750x1000
+* 828x1104
+* 1125x1500
+* 1242x1656
+
+**limit** max value is 100, default value is 5
+
+**minAge** min value is 18, **if user chose 55+ then minAge is absent**
+**maxAge** min value is 18, **if user chose 55+ then maxAge is absent**
+**maxDistance** min value is 1000, **if user chose 150+ then maxDistance is absent**
+
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":"",
+        "repeatRequestAfter":0,
+        "profiles":[
+            {
+                "userId":"9091127b2a88b002fad4ef55beb0264222c1ebb7",
+                "defaultSortingOrderPosition":0,
+
+                "lastOnlineText":"online",
+                "lastOnlineFlag":"online",
+                "distanceText":"<1km", //<1км
+                
+                "age":37,
+                "sex":"female",
+                
+                "property":0,
+                "transport":10,
+                "income":20,
+                "height":150,
+                "educationLevel":10,
+                "hairColor":0,
+                "children":0,
+
+                "name":"Mikhail",
+                "jobTitle":"Developer",
+                "company":"Ringoid",
+                "education":"BGTU Voenmeh",
+                "about":"Nice person",
+                "instagram":"unknown",
+                "tikTok":"unknown",
+                "whereLive":"St.Petersburg",
+                "whereFrom":"Leningrad",
+                        
+                "photos": [
+                        {
+                          "photoId": "480x640_sfsdfsdfsdf",
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
+                        },
+                        {
+                          "photoId": "480x640_gfgsdfsdf",
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
+                        },
+                        {
+                          "photoId": "480x640_gfdsfsdfsdf",
+                          "photoUri": "https://bla-bla.jpg",
+                          "thumbnailPhotoUri":"https://bla.jpg"
+                        }
+                ]
+            },
+            ...
+        ]
+    }
+
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `sex`
+
+* `male`
+* `female`
+* `unknown`
+
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+* EmailNotVerifiedClientError
+
 ### Get new faces
 
 * url ``https://{API ENDPOINT}/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345&limit={LIMIT}``
