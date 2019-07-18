@@ -946,3 +946,13 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (FEEDS_CHAT_WAS_RETURNED)
 
+4. FEEDS_DISCOVER_PROFILES
+
+* userId - string
+* sourceIp - string
+* profilesNum - int
+* repeatRequestAfter - int
+* unixTime - int
+* eventType - string (FEEDS_DISCOVER_PROFILES)
+
+
