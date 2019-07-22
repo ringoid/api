@@ -478,6 +478,224 @@ Possible errorCodes:
 * TooOldAppVersionClientError
 * EmailNotVerifiedClientError
 
+### Get LC
+
+* url ``https://{API ENDPOINT}/get_lc``
+
+POST request
+
+Headers:
+
+* x-ringoid-android-buildnum : 1       //int, x-ringoid-ios-buildnum in case of iOS
+* Content-Type : application/json
+
+Body:
+
+    {
+        "accessToken":"adfsdfsdfsdfsdfs",
+        "resolution":"480x640",
+        "lastActionTime":12345345,
+        "limit":20,
+        "source":"messages",
+        
+        "filter":{
+                   "minAge":18,
+                   "maxAge":33,
+                   "maxDistance":5000, //in a meters
+                  }
+    }
+    
+    accessToken, resolution and lastActionTime are required
+    filter and limit could be absent, in this case server will use default value
+
+Allowed Sizes:
+
+* 480x640
+* 720x960
+* 1080x1440
+* 1440x1920
+
+* 640x852
+* 750x1000
+* 828x1104
+* 1125x1500
+* 1242x1656
+
+**limit** max value is 100, default value is 5
+
+**minAge** min value is 18, **if user chose 55+ then minAge is absent**
+**maxAge** min value is 18, **if user chose 55+ then maxAge is absent**
+**maxDistance** min value is 1000, **if user chose 150+ then maxDistance is absent**
+
+Allowed Values for source:
+
+* new_faces
+* who_liked_me
+* messages
+* chat
+* profile
+
+ Response Body:
+ 
+    {
+        "errorCode":"",
+        "errorMessage":"",
+        "repeatRequestAfter":0,
+        
+        "allLikesYouProfilesNum":219,
+        "allMessagesProfilesNum":23,
+        
+        "likesYou": [
+            {
+              "userId": "fdsdfsdfsdfsdfsdf",
+              "defaultSortingOrderPosition": 0,
+
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+              "age":37,
+              "sex":"female",
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+              "educationLevel":10,
+              "hairColor":0,
+              "children":0,
+              
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
+                              
+              "notSeen": true,
+              "messages" : [], //!!!COULD BE NOT EMPTY
+              "photos": [
+                {
+                  "photoId": "480x640_52e08292d10cacf2f40abe5542513187270bb182",
+                  "photoUri": "https://bla-bla.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
+                },
+                ....
+              ]
+            },
+            {
+              "userId": "fsdfsdfsdfsdfsdf",
+              "defaultSortingOrderPosition": 1,
+
+              "lastOnlineText":"online",
+              "lastOnlineFlag":"online",
+              "distanceText":"<1km", //<1км
+              "age":37,
+              "sex":"female",
+              
+              "property":0,
+              "transport":10,
+              "income":20,
+              "height":150,
+              "educationLevel":10,
+              "hairColor":0,
+              "children":0,
+
+              "name":"Mikhail",
+              "jobTitle":"Developer",
+              "company":"Ringoid",
+              "education":"BGTU Voenmeh",
+              "about":"Nice person",
+              "instagram":"unknown",
+              "tikTok":"unknown",
+              "whereLive":"St.Petersburg",
+              "whereFrom":"Leningrad",              
+                           
+              "notSeen": false,
+              "photos": [
+                {
+                  "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
+                  "photoUri": "https://bla-bla.jpg",
+                  "thumbnailPhotoUri":"https://bla.jpg"
+                },
+                ....
+              ]
+            }
+        ],
+        
+        "messages": [
+            {
+               "userId": "fsdfsdfsdfsdfsdf",
+               "defaultSortingOrderPosition": 0,
+
+               "lastOnlineText":"online",
+               "lastOnlineFlag":"online",
+               "distanceText":"<1km", //<1км
+               "age":37,
+               "sex":"female",
+               
+               "property":0,
+               "transport":10,
+               "income":20,
+               "height":150,
+               "educationLevel":10,
+               "hairColor":0,
+               "children":0,
+
+               "name":"Mikhail",
+               "jobTitle":"Developer",
+               "company":"Ringoid",
+               "education":"BGTU Voenmeh",
+               "about":"Nice person",
+               "instagram":"unknown",
+               "tikTok":"unknown",
+               "whereLive":"St.Petersburg",
+               "whereFrom":"Leningrad",              
+                                         
+               "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
+               "messages" : [    //COULD BE EMPTY
+                    {"wasYouSender":false,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112",msgAt":12894399}, {"wasYouSender":true,"text":"Hi","msgId":"sdkjfh-12j","clientMsgId":"sadf112","msgAt":12894399}
+               ],
+               "photos": [
+                 {
+                    "photoId": "480x640_a196717eab427bd6c0a0128d0f213d4857ad5c3d",
+                    "photoUri": "https://s3-eu-west-1.amazonaws.com/test-ringoid-public-photo/a196717eab427bd6c0a0128d0f213d4857ad5c3d_480x640.jpg",
+                    "thumbnailPhotoUri":"https://bla.jpg"
+                 },
+                 ...
+        ]
+        
+    }
+    
+Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+
+* any text (include empty string)
+* `unknown`
+
+Possible values for `lastOnlineFlag`
+
+* `online`
+* `away`
+* `offline`
+* `unknown`
+
+Possible values for `sex`
+
+* `male`
+* `female`
+* `unknown`
+ 
+Possible errorCodes:
+
+* InternalServerError
+* WrongRequestParamsClientError
+* InvalidAccessTokenClientError
+* TooOldAppVersionClientError
+* EmailNotVerifiedClientError
+
 ### Get LMHIS
 
 * url ``https://{API ENDPOINT}/get_lmhis?accessToken={ACCESS TOKEN}&resolution=480x640&source=matches&lastActionTime=123345``
@@ -955,4 +1173,14 @@ Possible errorCodes:
 * unixTime - int
 * eventType - string (FEEDS_DISCOVER_PROFILES)
 
+5. FEEDS_LC_PROFILES
+
+* userId - string
+* sourceIp - string
+* source - string (feed from which lmm was requested)
+* likeYouProfilesNum - int
+* messageProfilesNum - int
+* repeatRequestAfter - int
+* unixTime - int
+* eventType - string (FEEDS_LC_PROFILES)
 
