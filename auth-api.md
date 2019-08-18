@@ -17,6 +17,7 @@ Headers:
 Body:
 
     {
+        "locale":"ru",
         "email":"vova@mail.ru"
     }
     
