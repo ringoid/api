@@ -205,11 +205,12 @@ Headers:
         "instagram":"unknown",
         "tikTok":"unknown",
         "whereLive":"St.Petersburg",
-        "whereFrom":"Leningrad"
+        "whereFrom":"Leningrad",
+        "statusText":"Hi all!"
     }
 
 Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
-`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom`, `statusText` :
 
 * any text (include empty string)
 * `unknown`
@@ -377,7 +378,8 @@ Body
         "instagram":"",
         "tikTok":"",
         "whereLive":"St.Petersburg",
-        "whereFrom":"Leningrad"
+        "whereFrom":"Leningrad",
+        "statusText":"Hi all!"
     }
 
     
@@ -490,6 +492,7 @@ Possible errorCodes:
 * tikTok - string,
 * whereLive - string,
 * whereFrom - string,
+* statusText - string,
 * unixTime - int
 * eventType - string (AUTH_USER_UPDATE_PROFILE)
 

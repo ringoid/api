@@ -86,6 +86,7 @@ Allowed Sizes:
                 "tikTok":"unknown",
                 "whereLive":"St.Petersburg",
                 "whereFrom":"Leningrad",
+                "statusText":"Hi all!",
                         
                 "photos": [
                         {
@@ -110,7 +111,7 @@ Allowed Sizes:
     }
 
 Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
-`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom`, `statusText` :
 
 * any text (include empty string)
 * `unknown`
@@ -136,7 +137,7 @@ Possible errorCodes:
 * TooOldAppVersionClientError
 * EmailNotVerifiedClientError
 
-### Get new faces
+### Get new faces (**DEPRECATED**)
 
 * url ``https://{API ENDPOINT}/get_new_faces?accessToken={ACCESS TOKEN}&resolution=480x640&lastActionTime=123345&limit={LIMIT}``
 
@@ -247,7 +248,7 @@ Possible errorCodes:
 * TooOldAppVersionClientError
 * EmailNotVerifiedClientError
 
-### Get LMM
+### Get LMM (**DEPRECATED**)
 
 * url ``https://{API ENDPOINT}/get_lmm?accessToken={ACCESS TOKEN}&resolution=480x640&source=matches&lastActionTime=123345``
 
@@ -572,7 +573,8 @@ Allowed Values for source:
               "instagram":"unknown",
               "tikTok":"unknown",
               "whereLive":"St.Petersburg",
-              "whereFrom":"Leningrad",              
+              "whereFrom":"Leningrad",
+              "statusText":"Hi all!",              
                               
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -611,7 +613,8 @@ Allowed Values for source:
               "instagram":"unknown",
               "tikTok":"unknown",
               "whereLive":"St.Petersburg",
-              "whereFrom":"Leningrad",              
+              "whereFrom":"Leningrad",
+              "statusText":"unknown",              
                            
               "notSeen": false,
               "photos": [
@@ -652,7 +655,8 @@ Allowed Values for source:
                "instagram":"unknown",
                "tikTok":"unknown",
                "whereLive":"St.Petersburg",
-               "whereFrom":"Leningrad",              
+               "whereFrom":"Leningrad",
+               "statusText":"unknown",              
                                          
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [    //COULD BE EMPTY
@@ -670,7 +674,7 @@ Allowed Values for source:
     }
     
 Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
-`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom`, `statusText` :
 
 * any text (include empty string)
 * `unknown`
@@ -696,7 +700,7 @@ Possible errorCodes:
 * TooOldAppVersionClientError
 * EmailNotVerifiedClientError
 
-### Get LMHIS
+### Get LMHIS (**DEPRECATED**)
 
 * url ``https://{API ENDPOINT}/get_lmhis?accessToken={ACCESS TOKEN}&resolution=480x640&source=matches&lastActionTime=123345``
 
@@ -1083,12 +1087,12 @@ Headers:
             "tikTok":"unknown",
             "whereLive":"St.Petersburg",
             "whereFrom":"Leningrad",              
-            
+            "statusText":"Hi all!"
         }
     }
     
 Possible values for `lastOnlineText`, `distanceText`, `name`, `jobTitle`, `company`, 
-`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom` :
+`education`, `about`, `instagram`, `tikTok`, `whereLive`, `whereFrom`, `statusText` :
 
 * any text (include empty string)
 * `unknown`
