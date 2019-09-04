@@ -87,6 +87,7 @@ Allowed Sizes:
                 "whereLive":"St.Petersburg",
                 "whereFrom":"Leningrad",
                 "statusText":"Hi all!",
+                "totalLikes":22,
                         
                 "photos": [
                         {
@@ -574,7 +575,8 @@ Allowed Values for source:
               "tikTok":"unknown",
               "whereLive":"St.Petersburg",
               "whereFrom":"Leningrad",
-              "statusText":"Hi all!",              
+              "statusText":"Hi all!",
+              "totalLikes":22,              
                               
               "notSeen": true,
               "messages" : [], //!!!COULD BE NOT EMPTY
@@ -614,7 +616,8 @@ Allowed Values for source:
               "tikTok":"unknown",
               "whereLive":"St.Petersburg",
               "whereFrom":"Leningrad",
-              "statusText":"unknown",              
+              "statusText":"unknown",
+              "totalLikes":22,              
                            
               "notSeen": false,
               "photos": [
@@ -656,7 +659,8 @@ Allowed Values for source:
                "tikTok":"unknown",
                "whereLive":"St.Petersburg",
                "whereFrom":"Leningrad",
-               "statusText":"unknown",              
+               "statusText":"unknown",
+               "totalLikes":22,              
                                          
                "notSeen": false, //ALWAYS false in this feed. The client determines read/unread profile indicator based on change in the total count of messages for each profile. If the count has changed from the value stored in the local cache then you can assume there are new messages and the app should display unread icon, otherwise read icon.
                "messages" : [    //COULD BE EMPTY
@@ -1087,7 +1091,8 @@ Headers:
             "tikTok":"unknown",
             "whereLive":"St.Petersburg",
             "whereFrom":"Leningrad",              
-            "statusText":"Hi all!"
+            "statusText":"Hi all!",
+            "totalLikes":22
         }
     }
     
@@ -1174,6 +1179,7 @@ Possible errorCodes:
 * sourceIp - string
 * profilesNum - int
 * repeatRequestAfter - int
+* executeTime - int
 * unixTime - int
 * eventType - string (FEEDS_DISCOVER_PROFILES)
 
