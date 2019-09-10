@@ -120,6 +120,13 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
           "lat":12345.123467657,
           "lon":12346.123456456,
           "actionTime":12342342354 //unix time in milliseconds
+          
+8. READ_MESSAGE json with properties
+
+          "actionType":"READ_MESSAGE",
+          "userId":"sdfds=sdfsdf",    //opposite user id
+          "msgId":"skdjfhhl=sdd", 
+          "actionTime":12342342354 //unix time in milliseconds
 
 ## Analytics Events
 
@@ -213,3 +220,11 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 * updatedLocationTime - int
 * unixTime - int
 * eventType - string (ACTION_USER_CHANGE_LOCATION)
+
+8. ACTION_USER_READ_MESSAGE
+
+* userId - string
+* oppositeUserId - string
+* msgId - string
+* unixTime - int
+* eventType - string (ACTION_USER_READ_MESSAGE)
