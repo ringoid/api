@@ -257,7 +257,8 @@ Body:
         "pushNewLike":true,
         "pushNewMessage":true,
         "pushNewMatch":true,
-        "timeZone":3
+        "timeZone":3,
+        "vibration":true,
     }
     
     accessToken is required
@@ -443,6 +444,8 @@ Possible errorCodes:
 * wasPushNewLikeChanged - bool
 * wasPushNewMatchChanged - bool
 * wasPushNewMessageChanged - bool
+* pushVibration - bool
+* wasPushVibrationChanged - bool
 * timeZone - int
 * wasTimeZoneChanged - bool
 * unixTime - int
