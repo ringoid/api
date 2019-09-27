@@ -221,10 +221,10 @@ Possible source feeds : new_faces, who_liked_me, matches, messages, chat
 * unixTime - int
 * eventType - string (ACTION_USER_CHANGE_LOCATION)
 
-8. ACTION_USER_READ_MESSAGE
+8. ACTION_READ_MESSAGE
 
 * userId - string
 * oppositeUserId - string
 * msgId - string
 * unixTime - int
-* eventType - string (ACTION_USER_READ_MESSAGE)
+* eventType - string (ACTION_READ_MESSAGE)
