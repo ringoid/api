@@ -29,7 +29,10 @@
             
             "data" : {
             "type" : "NEW_LIKE_PUSH_TYPE",
-            "oppositeUserId":"sldkfjjj939i4"
+            "oppositeUserId":"sldkfjjj939i4",
+            "name" : "Alexandra", //could be `unknown`
+            "thumbnails": "https://cdn.net/bla.jpg", // or could be "https://cdn.net/bla.jpg;https://cdn.net/bla_1.jpg",
+            "ts" : "1233455667" //unix time in millis (when message was received by server)
             }
             }
         }
@@ -46,7 +49,10 @@
             
             "data" : {
             "type" : "NEW_MATCH_PUSH_TYPE",
-            "oppositeUserId":"sldkfjjj939i4"
+            "oppositeUserId":"sldkfjjj939i4",
+            "name" : "Alexandra", //could be `unknown`
+            "thumbnails": "https://cdn.net/bla.jpg;https://cdn.net/bla_1.jpg",
+            "ts" : "1233455667" //unix time in millis (when message was received by server)
             }
             }
         }
@@ -63,7 +69,11 @@
             
             "data" : {
             "type" : "NEW_MESSAGE_PUSH_TYPE",
-            "oppositeUserId":"sldkfjjj939i4"
+            "oppositeUserId":"sldkfjjj939i4",
+            "text" : "Hi",
+            "name" : "Alexandra", //could be `unknown`
+            "thumbnails": "https://cdn.net/bla.jpg;https://cdn.net/bla_1.jpg",
+            "ts" : "1233455667" //unix time in millis (when message was received by server)
             }
             }
         }
